@@ -100,6 +100,7 @@ int main(int argc, char* argv[]) {
   float currentVolume = 0;
   endpointVolume->GetMasterVolumeLevel(&currentVolume);
   printf("Current volume in dB is: %f\n", currentVolume);
+
   hr = endpointVolume->GetMasterVolumeLevelScalar(&currentVolume);
   printf("Current volume as a scalar is: %f\n", currentVolume);
 
